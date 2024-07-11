@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>What I am Playing</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="Game1" style="display:inline-flex;" class="link">
+            <img src="elden_ring.jpg">
+            <h3 style="margin:auto; margin-left:20px">Elden Ring</h3>
+            <p style="margin:auto; margin-left: 20px;">Shadow of the Erdtree... Must I say more.</p>
+        </section>
+        <br>
+        <section id="Game2" style="display:inline-flex;" class="link">
+            <img src="age_of_empires.png">
+            <h3 style="margin:auto; margin-left:20px">Age of Empires IV</h3>
+        </section>
+        <script type="module">
+            document.getElementById("Game1").addEventListener("click", (e) => {
+                window.open("https://en.bandainamcoent.eu/elden-ring/elden-ring", "_blank");
+            })
+            document.getElementById("Game2").addEventListener("click", (e) => {
+                window.open("https://www.ageofempires.com/", "_blank");
+            })
+        </script>
+    </body>
+</html>

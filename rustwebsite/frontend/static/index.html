@@ -1,0 +1,77 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume - Pedro Gonzalez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="whatiamplaying.html">What I am Playing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Other sections like Projects, Experience, Contact, etc. -->
+    <section id="intro" class="noLink">
+        <h2>Welcome to My Interactive Resume</h2>
+        <p>This website showcases my skills and projects. It is powered by the Rust crates wasm-bindgen for WebAssemply and rocket for routing, HTML, CSS, and of course... JavaScript.</p>
+    </section>
+
+    <section id="backend" class="noLink">
+        <h2>Rust Crates</h2>
+        <br>
+        <p class="button" style="display: inline-block !important;" id="Tech1">rocket</p>
+        <p class="button" style="display: inline-block !important; margin-left: 10px" id="Tech2">wasm-bindgen</p>
+    </section>
+    <section id="GitHub" class="noLink">
+        <h2>GitHub</h2>
+        <br>
+        <p class="button" style="display:inline-block !important;" id="GH2">Profile</p>
+        <p class="button" style="display:inline-block !important; margin-left:10px;" id="GH1">Website</p>
+        <p class="button" style="display:inline-block !important; margin-left:10px;" id="GH3">Capstone Project</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script type="module">
+        import init, { greet } from "./wasm.js";
+        init().then(() => {
+            // greet("Josh");
+        });
+        document.getElementById("Tech1").addEventListener("click", () => {
+            window.open("https://crates.io/crates/rocket", "_blank"
+            )
+        })
+        document.getElementById("Tech2").addEventListener("click", () => {
+            window.open("https://crates.io/crates/wasm-bindgen", "_blank"
+            )
+        })
+        document.getElementById("GH1").addEventListener("click", () => {
+            window.open("https://github.com/juicysteak7/RustWebsite", "_blank"
+            )
+        })
+        document.getElementById("GH2").addEventListener("click", () => {
+            window.open("https://github.com/juicysteak7", "_blank"
+            )
+        })
+        document.getElementById("GH3").addEventListener("click", () => {
+            window.open("https://github.com/ndubs18/lang2views", "_blank"
+            )
+        })
+    </script>
+</body>
+</html>
+
+
+
