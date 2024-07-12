@@ -61,10 +61,6 @@
 
 
     <script type="module">
-        import init, { greet } from "./wasm.js";
-        init().then(() => {
-            // greet("Josh");
-        });
         let ballsClicked = 0;
         document.addEventListener("DOMContentLoaded", function () {
             const elements = document.querySelectorAll('.hidden');
