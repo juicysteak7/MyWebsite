@@ -51,6 +51,7 @@ nav ul li a:hover {
     border-bottom: 2px solid green;
     border-radius: 45px;
     animation: fadeIn 0.5s ease-out; /* Apply animation */
+    cursor: pointer;
 }
 
 .button:hover {
@@ -87,6 +88,7 @@ nav ul li a:hover {
     border-radius: 15px; /* Rounded corners */
     border-bottom: 2px solid green;
     animation: fadeIn 0.5s ease-out; /* Apply animation */
+    cursor: pointer;
 }
 
 .link:hover {
@@ -106,4 +108,57 @@ section h2 {
 section p {
     font-size: 16px; /* Example paragraph font size */
     line-height: 1.5; /* Improved line spacing */
+}
+
+@keyframes moveBg {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.moving-object {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.moving-object:hover {
+    box-shadow: 5px 5px 10px green; /* Box shadow for header */
+}
+
+#object1 {
+    animation-duration: 15s;
+}
+
+#object2 {
+    animation-duration: 20s;
+}
+
+@keyframes moveObject {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100vw, 100vh);
+    }
+}
+
+@keyframes objectFadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes objectFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.hidden {
+    opacity: 0;
+    animation: fadeOut 0.5s ease-out forwards;
 }
