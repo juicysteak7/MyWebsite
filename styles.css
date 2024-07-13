@@ -161,13 +161,13 @@ section p {
     }
 
     nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin-right: 0 !important;
     }
 
     nav ul li a {
         display: block;
         width: 90%;
         text-align: center;
+        margin-bottom: 20px;
     }
 }
