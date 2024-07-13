@@ -20,6 +20,7 @@ nav ul {
     border-radius: 30px; /* Rounded corners */
     overflow: hidden; /* Ensures rounded corners are visible */
     animation: fadeIn 0.5s ease-out; /* Apply animation */
+    flex-wrap: wrap;
 }
 
 nav ul li {
