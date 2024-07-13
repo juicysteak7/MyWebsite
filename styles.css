@@ -6,6 +6,7 @@ header {
     border-bottom: 2px solid green;
     border-top: 2px solid green;
     animation: fadeIn 0.5s ease-out; /* Apply animation */
+    position: fixed;
 }
 
 body {
@@ -20,7 +21,6 @@ nav ul {
     border-radius: 30px; /* Rounded corners */
     overflow: hidden; /* Ensures rounded corners are visible */
     animation: fadeIn 0.5s ease-out; /* Apply animation */
-    display: inline;
 }
 
 nav ul li {
