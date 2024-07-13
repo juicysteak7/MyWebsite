@@ -20,6 +20,7 @@ nav ul {
     border-radius: 30px; /* Rounded corners */
     overflow: hidden; /* Ensures rounded corners are visible */
     animation: fadeIn 0.5s ease-out; /* Apply animation */
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -152,4 +153,21 @@ section p {
 .hidden {
     opacity: 0;
     animation: fadeOut 0.5s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
